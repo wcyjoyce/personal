@@ -26,5 +26,6 @@
 
 <!-- Contact -->
 <div class="contact">
-  <%= link_to "New Message", new_message_path %>
+  <%= render "messages/form", message: @message %>
+  <!-- <%= link_to "New Message", new_message_path %> -->
 </div>
