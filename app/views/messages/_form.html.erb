@@ -1,6 +1,12 @@
 <%= simple_form_for(message) do |m| %>
-  <%= m.input :name, label: false, placeholder: "NAME" %>
-  <%= m.input :email, label: false, placeholder: "EMAIL" %>
-  <%= m.input :message, label: false, placeholder: "MESSAGE" %>
-  <%= m.submit "SUBMIT", class: "btn" %>
+  <div class="col-lg-6 col-sm-6 col-xs-12">
+    <%= m.input :name, label: false, placeholder: "NAME" %>
+  </div>
+  <div class="col-lg-6 col-sm-6 col-xs-12">
+    <%= m.input :email, label: false, placeholder: "EMAIL" %>
+  </div>
+  <div class="col-lg-12 col-sm-12 col-xs-12">
+    <%= m.input :message, label: false, placeholder: "MESSAGE" %>
+  </div>
+  <%= m.submit "SUBMIT", class: "btn center-block" %>
 <% end %>

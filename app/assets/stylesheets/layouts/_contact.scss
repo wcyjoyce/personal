@@ -1,0 +1,54 @@
+.contact {
+  width: 90%;
+  margin: auto;
+  padding: 30px 20px;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 16px;
+    text-align: center;
+  }
+}
+
+.col-lg-6, .col-lg-12 {
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  font-size: 14px;
+  color: $red;
+  background: transparent;
+  border: solid 1px $dark-gray;
+}
+
+.text {
+  padding-bottom: 10px;
+}
+
+.btn {
+  border: 1px solid $gray;
+  // border-radius: 20px;
+  padding: 4px 50px;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: $gray;
+
+  &:hover {
+    border: 1px solid $gray;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+}
+
