@@ -1,0 +1,6 @@
+<%= simple_form_for(message) do |m| %>
+  <%= m.input :name, label: false, placeholder: "NAME" %>
+  <%= m.input :email, label: false, placeholder: "EMAIL" %>
+  <%= m.input :message, label: false, placeholder: "MESSAGE" %>
+  <%= m.submit "SUBMIT", class: "btn" %>
+<% end %>

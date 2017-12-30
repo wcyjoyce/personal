@@ -1,3 +1,4 @@
+<!-- Cover -->
 <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'cover.jpg' %>)">
   <!-- Desktop -->
   <div class="cover-text hidden-xs">
@@ -21,4 +22,9 @@
   <div class="mobile footer hidden-sm hidden-md hidden-lg">
     <%= render "components/footer" %>
   </div>
+</div>
+
+<!-- Contact -->
+<div class="contact">
+  <%= link_to "New Message", new_message_path %>
 </div>
