@@ -15,35 +15,17 @@
   }
 }
 
-.portfolio-text {
+// .portfolio-text .col-xs-12, .portfolio-text .col-sm-4, .portfolio-text .col-lg-4 {
+.portfolio-text .col-xs-12, .col-sm-4, .col-lg-4 {
+  margin-bottom: 15px;
 
-  h3 {
-    margin: 12.5px 20px;
-    font-size: 20px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+  &:first-child {
+    padding-left: 0px;
   }
 
-  .mobile {
-    text-align: center;
+  &:last-child {
+    padding-right: 0px;
   }
-
-  .col-xs-12, .col-sm-4, .col-lg-4 {
-    margin-bottom: 15px;
-
-    &:first-child {
-      padding-left: 0px;
-    }
-
-    &:last-child {
-      padding-right: 0px;
-    }
-  }
-}
-
-.cards {
-  height: 330px;
 }
 
 .card {
@@ -57,11 +39,11 @@
   .thumbnail {
     font-size: 14px;
     height: 200px;
-    margin: 0px 20px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50%;
     border: none;
+    margin: 10px 0px;
 
     &:hover {
       opacity: 0.7;
@@ -77,12 +59,14 @@
   h4 {
     font-size: 18px;
     letter-spacing: 2px;
-    margin: 10px;
-    padding-top: 5px;
+    padding: 10px;
+    margin: 0px;
+
   }
 
   h5 {
     font-size: 12px;
+    margin: 2.5px 0px 15px 0px;
   }
 
   p {
