@@ -1,0 +1,38 @@
+.col-lg-6, .col-lg-12 {
+  padding: 5px;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.form-control {
+  font-size: 14px;
+  color: $dark-gray;
+  background: transparent;
+  border: solid 1px $dark-gray;
+}
+
+.text {
+  padding-bottom: 10px;
+}
+
+.btn {
+  border: 1px solid $dark-gray;
+  padding: 4px 50px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: $dark-gray;
+
+  &:hover {
+    border: 1px solid $dark-gray;
+    background: transparent;
+    transition: all 0.3s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-text {
+    flex-direction: column;
+  }
+}

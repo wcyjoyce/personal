@@ -3,9 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 50vh;
-  width: 90%;
-  margin: auto;
-  padding: 30px 20px;
+  padding: 25px;
 
   h2 {
     font-size: 30px;
@@ -24,40 +22,62 @@
 }
 
 .contact-text {
-  width: 100vw;
-}
+  display: flex;
+  justify-content: space-around;
 
-.col-lg-6, .col-lg-12 {
-  padding: 5px;
-}
+  .half {
+    width: 50vw;
+    padding: 0px 30px;
 
-.form-group {
-  margin-bottom: 5px;
-}
+    table {
+      display: flex;
+      justify-content: center;
+      margin: 20px;
 
-.form-control {
-  font-size: 14px;
-  color: $dark-gray;
-  background: transparent;
-  border: solid 1px $dark-gray;
-}
+      tr {
+        height: 30px;
+        width: 30px;
 
-.text {
-  padding-bottom: 10px;
-}
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
 
-.btn {
-  border: 1px solid $dark-gray;
-  // border-radius: 20px;
-  padding: 4px 50px;
-  text-transform: uppercase;
-  font-size: 12px;
-  color: $dark-gray;
+      td {
+        padding-bottom: 7.5px;
+      }
 
-  &:hover {
-    border: 1px solid $dark-gray;
-    background: transparent;
-    transition: all 0.3s ease;
+      .fa {
+        padding: 7px 8px;
+        text-align: center;
+        background: $dark-gray;
+        color: white;
+        border: 1px solid $dark-gray;
+        border-radius: 50%;
+
+        &:hover {
+          background: $gray;
+          transition: all 0.3s ease;
+        }
+      }
+
+      .detail {
+        font-family: "Lato", "sans-serif";
+        font-size: 12.5px;
+        letter-spacing: 1px;
+        padding-left: 12.5px;
+      }
+
+      a {
+        text-decoration: none;
+        color: $dark-gray;
+
+        &:hover {
+          text-decoration: none;
+          color: $gray;
+          transition: all 0.3s ease;
+        }
+      }
+    }
   }
 }
-

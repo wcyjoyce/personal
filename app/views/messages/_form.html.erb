@@ -1,3 +1,6 @@
+<h2 class="hidden-xs">02 / CONTACT ME</h2>
+<h2 class="hidden-sm hidden-md hidden-lg">CONTACT ME</h2>
+
 <%= simple_form_for(message) do |m| %>
   <div class="col-lg-6 col-sm-6 col-xs-12">
     <%= m.input :name, label: false, placeholder: "NAME" %>
@@ -6,7 +9,7 @@
     <%= m.input :email, label: false, placeholder: "EMAIL" %>
   </div>
   <div class="col-lg-12 col-sm-12 col-xs-12">
-    <%= m.input :message, label: false, placeholder: "MESSAGE" %>
+    <%= m.input :message, input_html: {rows: 5}, label: false, placeholder: "MESSAGE" %>
   </div>
-  <%= m.submit "SUBMIT", class: "btn center-block" %>
+  <%= m.submit "SEND MESSAGE", class: "btn center-block" %>
 <% end %>
