@@ -1,10 +1,15 @@
 .about {
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 25px;
   text-align: center;
   background: $test;
+}
+
+.about-text {
+  width: 100%;
 
   h2 {
     font-size: 30px;
@@ -16,9 +21,25 @@
 
   p {
     font-size: 16px;
+    margin: 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $gray;
+
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease;
+    }
   }
 }
 
-.about-text {
-  width: 100%;
+.fa-file-text-o {
+  padding: 17.5px 0px 25px 0px;
+  font-size: 18px;
+}
+
+.padding {
+  height: 80px;
 }
