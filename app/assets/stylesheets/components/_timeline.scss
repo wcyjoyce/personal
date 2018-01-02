@@ -70,7 +70,7 @@
   border: 1px solid $dark-gray;
 }
 
-.date {
+.milestone-date {
   position: absolute;
   top: 43%;
   left: -12.5px;
@@ -153,7 +153,7 @@
 }
 
 .top {
-  .date {
+  .milestone-date {
     top: 53%;
   }
 
@@ -171,6 +171,80 @@
       background: white;
       border-left: 1px solid $dark-gray;
       border-top: 1px solid $dark-gray;
+    }
+  }
+}
+
+// Mobile Display
+
+.mobile-category {
+  font-size: 20px;
+  font-weight: bolder;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 10px 0px;
+}
+
+.mobile-milestones {
+  text-align: left;
+}
+
+.mobile-milestone {
+  padding: 7.5px 0px;
+
+  p {
+    font-size: 12px;
+    font-weight: lighter;
+    line-height: 1.2;
+  }
+
+  .mobile-organisation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 7.5px;
+
+    h4 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin: 0px;
+    }
+
+    h5 {
+      font-size: 12px;
+      font-weight: lighter;
+      text-transform: uppercase;
+      text-align: right;
+      margin: 0px;
+      min-width: 75px;
+    }
+  }
+
+  .mobile-date {
+    font-size: 10px;
+    font-weight: lighter;
+    font-family: "Lato", "sans-serif";
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 0px 0px 5px 0px;
+  }
+
+  .mobile-detail {
+    h6 {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 2.5px 0px 5px 0px;
+    }
+  }
+
+  .mobile-flex {
+    display: flex;
+    justify-content: flex-start;
+
+    .mobile-label {
+      min-width: 80px;
     }
   }
 }
