@@ -1,0 +1,92 @@
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  background: $light-gray;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-align: center;
+    margin-top: 0px;
+  }
+}
+
+.portfolio-text {
+
+  h3 {
+    margin: 12.5px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+  }
+
+  .mobile {
+    text-align: center;
+  }
+
+  .col-xs-12, .col-sm-4, .col-lg-4 {
+    margin-bottom: 15px;
+
+    &:first-child {
+      padding-left: 0px;
+    }
+
+    &:last-child {
+      padding-right: 0px;
+    }
+  }
+}
+
+.cards {
+  height: 330px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  color: $dark-gray;
+  padding: 0px 5px;
+
+  .thumbnail {
+    font-size: 14px;
+    height: 200px;
+    margin: 0px 20px;
+    background: $test;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border: none;
+
+    &:hover {
+      opacity: 0.7;
+      transition: all 0.5s ease;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark-gray;
+  }
+
+  h4 {
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 10px;
+    padding-top: 5px;
+  }
+
+  h5 {
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}
