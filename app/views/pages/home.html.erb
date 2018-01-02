@@ -1,5 +1,5 @@
 <!-- Cover -->
-<div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'cover.jpg' %>)">
+<div class="cover" id="picture" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'cover.jpg' %>)">
   <%= render "cover" %>
 </div>
 
@@ -29,3 +29,18 @@
     </div>
   </div>
 </div>
+
+<%= content_for(:after_js) do %>
+  <script>
+    var scrollscroll = document.getElementById("picture");
+    var winH = $(window).height();
+
+    $(window).on("scroll", function() {
+      if ($(this).scrollTop() > winH) {
+        scrollscroll.addClass("sticky");
+      } else {
+        $(scrollscroll).removeClass("sticky")
+      }
+    });
+  </script>
+<% end %>
