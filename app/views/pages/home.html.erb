@@ -29,18 +29,3 @@
     </div>
   </div>
 </div>
-
-<%= content_for(:after_js) do %>
-  <script>
-    var scrollscroll = document.getElementById("picture");
-    var winH = $(window).height();
-
-    $(window).on("scroll", function() {
-      if ($(this).scrollTop() > winH) {
-        scrollscroll.addClass("sticky");
-      } else {
-        $(scrollscroll).removeClass("sticky")
-      }
-    });
-  </script>
-<% end %>
