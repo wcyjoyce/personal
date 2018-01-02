@@ -1,35 +1,31 @@
 <!-- Cover -->
 <div class="cover" style="background-image: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(<%= image_path 'cover.jpg' %>)">
-  <!-- Desktop -->
-  <div class="cover-text hidden-xs">
-    <div>
-      <h1>Joyce Wong</h1>
-      <h2>Former JPM Analyst • </h2>
-      <h2>Le Wagon Alumni • LSE Graduate</h2>
-    </div>
-  </div>
-  <div class="footer hidden-xs">
-    <%= render "components/footer" %>
-  </div>
-  <!-- Mobile -->
-  <div class="mobile-text hidden-sm hidden-md hidden-lg">
-    <div>
-      <h1>Joyce Wong</h1>
-      <h2>Former JPM Analyst • </h2>
-      <h2>Le Wagon Alumni • LSE Graduate</h2>
-    </div>
-  </div>
-  <div class="mobile footer hidden-sm hidden-md hidden-lg">
-    <%= render "components/footer" %>
-  </div>
+  <%= render "cover" %>
+</div>
+
+<!-- About -->
+<div class="about">
+  <%= render "about" %>
+</div>
+
+<!-- Portfolio -->
+<div class="portfolio">
+  <%= render "portfolio" %>
 </div>
 
 <!-- Contact -->
 <div class="contact">
   <div class="contact-text">
-    <h2>CONTACT ME</h2>
-    <p class="hidden-xs">If you like what you see and want to work with me, or just want to see and learn more of my work, please get in touch!</p>
-    <%= render "messages/form", message: @message %>
-    <!-- <%= link_to "New Message", new_message_path %> -->
+    <!-- Contact: Desktop -->
+    <div class="contact-one half hidden-xs">
+      <%= render "contact" %>
+    </div>
+    <div class="contact-two half hidden-xs">
+      <%= render "messages/form", message: @message %>
+    </div>
+    <!-- Contact: Mobile -->
+    <div class="contact-two hidden-sm hidden-md hidden-lg">
+      <%= render "messages/form", message: @message %>
+    </div>
   </div>
 </div>
