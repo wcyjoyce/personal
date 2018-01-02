@@ -1,0 +1,24 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  text-align: center;
+  background: $test;
+
+  h2 {
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 0px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
+
+.about-text {
+  width: 100%;
+}
