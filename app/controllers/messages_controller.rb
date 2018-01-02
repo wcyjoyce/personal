@@ -6,7 +6,6 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      MessageMailer.confirmation(@message).deliver_now
       redirect_to root_path
     else
       render :new

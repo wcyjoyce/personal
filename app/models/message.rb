@@ -3,7 +3,7 @@ class Message < ApplicationRecord
   validates :email, presence: true, format: { with: /\A.*@.*\.com\z/ }
   validates :message, presence: true
 
-  after_create :send_confirmation
+  # after_create :send_confirmation
 
   private
 
