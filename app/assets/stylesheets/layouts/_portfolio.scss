@@ -66,10 +66,32 @@
 
   h5 {
     font-size: 12px;
-    margin: 2.5px 0px 15px 0px;
+    margin: 2.5px 0px;
   }
 
   p {
     font-size: 14px;
+    margin: 12.5px 0px;
+  }
+
+  .project-links {
+    font-size: 11px;
+    font-family: "Lato", "sans-serif";
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: #B7B7B7;
+
+      &:hover {
+        color: $dark-gray;
+        transition: all 0.3s ease;
+      }
+    }
   }
 }
