@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root to: "pages#home"
-  resources :messages, only: [:new, :create]
+  resources :messages, only: [:new, :create, :show]
 end

@@ -13,6 +13,10 @@ class MessagesController < ApplicationController
     end
   end
 
+  def show
+    @messages = Message.order(created_at: :desc)
+  end
+
   private
 
   def message_params
