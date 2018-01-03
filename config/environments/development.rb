@@ -53,7 +53,8 @@ Rails.application.configure do
 
   # Mailer
   config.action_mailer.delivery_method = :smtp #:letter_opener
-  config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.default_url_options = { host: "www.joycewong.info" }
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
