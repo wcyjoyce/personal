@@ -9,7 +9,7 @@ class MessageMailer < ApplicationMailer
     @message = message
     mail(
       to: "wcyjoyce.hk@gmail.com",
-      subject: "Message From #{@message.email}"
+      subject: "JOYCEWONG.INFO | Message From #{@message.email}"
     )
   end
 end
