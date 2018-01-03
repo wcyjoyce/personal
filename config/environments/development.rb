@@ -1,5 +1,13 @@
 Rails.application.configure do
-    # Verifies that versions and hashed value of the package contents in the project's package.json
+  # Mailer
+  config.action_mailer.delivery_method = :smtp #:letter_opener
+  config.action_mailer.default_url_options = { host: "www.joycewong.info" }
+  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default charset: "utf-8"
+
+  # Verifies that versions and hashed value of the package contents in the project's package.json
   config.webpacker.check_yarn_integrity = true
 
   # Settings specified here will take precedence over those in config/application.rb.
@@ -50,11 +58,6 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
-
-  # Mailer
-  config.action_mailer.delivery_method = :smtp #:letter_opener
-  config.action_mailer.default_url_options = { host: "www.joycewong.info" }
-  # config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
