@@ -6,10 +6,9 @@ class MessagesController < ApplicationController
   def create
     @message = Message.new(message_params)
     if @message.save
-      redirect_to root_path, notice: "Thanks for leaving a message, I will get back to you shortly!"
+      redirect_to "#contact", notice: "Thanks for leaving a message, I will get back to you shortly!"
     else
-      redirect_to root_path, alert:
-        "There was a problem with your message. Please try again."
+      redirect_to "#contact", alert: "There was a problem with your message. Please try again."
     end
   end
 
